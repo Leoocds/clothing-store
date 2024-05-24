@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "Botoes";
+  src: url("/Fontes/Barriecito-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "texto";
+  src: url("/Fontes/Delicious.ttf") format("truetype");
+}
+
+body {
+  background-color: #ffffff;
+  background-size: contain;
+  background-attachment: fixed;
+  color: rgb(0, 119, 255);
+  font-family: "texto";
+}
+
+header {
+	font-family: "Botoes";
+	background-color: #000000;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+}
+
+header a {
+	text-decoration: none;
+	text-decoration-color: transparent;
+}
+
+nav a {
+	text-decoration: none;
+	text-decoration-color: transparent;
+}
+
+header {
+	background-color: #ffffff;
+}
+
+.title {
+  color: #000000;
+  font-size: xx-large;
+  font-family: "Botoes";
+  font-weight: 900;
+  margin-left: 8px;
+}
+
+h2 {
+  color: #000000;
+  font-size: xx-large;
+  font-weight: 500;
+  margin-left: 40px;
+  -webkit-text-stroke-width: 0, 8px;
+  -webkit-text-stroke-color: #006eff;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  font-weight: 300;
+  margin: 40px;
+  -webkit-text-stroke-width: 0, 8px;
+  -webkit-text-stroke-color: #006eff;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.container button {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  color: #000000;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.container button:hover {
+  background-color: #006eff;
+  background-size: 40px;
+  text-decoration: underline;
+}
+
+.container {
+  position: sticky;
+  display: block;
+  top: 0;
+  text-align: right;
+}
+
+.container button {
+  float: right;
+  margin-left: 10px;
+}
+
+.menu li a {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: "Botoes";
+  padding: 10px 15px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  font-size: 24px;
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.menu a {
+  position: relative;
+}
+
+.menu a:hover::after {
+  background-color: #006eff;
+}
+
+.menu li a:hover {
+  color: #006eff;
+  background-color: #006eff00;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* SUB MENU */
+.menu .submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+}
+
+.menu .submenu li {
+	display: block;
+}
+
+.menu .submenu a {
+	padding: 10px 0;
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	transition: background-color 0.5s ease;
+}
+
+/* Mostrar o submenu quando o item do menu principal é hover */
+.menu li:hover .submenu {
+	display: block;
+}
+
+/*  */
+
+.bar {
+  justify-content: right;
+}
+
+.bar input {
+  width: 15em;
+  height: 2em;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Página Masculina */
+
+.produto-masc {
+  width: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.produto-masc img {
+  width: 200px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.produto-masc img:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.nameCamisaMasc {
+  text-decoration: none;
+}
+
+.produto-masc h2 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+
+.produto-masc h2:hover {
+  color: #ff9d00;
+}
+
+.produto-masc p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Página Feminina */
+.produto-fem {
+  width: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.produto-fem img {
+  width: 200px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.produto-fem img:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.produto-fem h2 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+
+.nameCamisaFem {
+  text-decoration: none;
+}
+
+.produto-fem p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.produto-fem h2:hover {
+  color: #ff9d00;
+}
+
+@media (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .responsive-menu {
+    display: block;
+    position: relative;
+    top: 100;
+    right: -300;
+    z-index: 999;
+  }
+
+  .sidebar {
+    top: 100;
+    right: 250px;
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    right: 50px;
+  }
+
+  .menu {
+    padding: 20px;
+    margin: 10px;
+    list-style: none;
+  }
+
+  .menu li {
+    margin: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+  }
+
+  .menu li a {
+    display: none;
+    padding: 10px;
+  }
+
+  .menu li a:hover {
+    background-color: #1100ff;
+  }
+
+  .menu li ul li {
+    display: block;
+    width: 100px;
+  }
+}
+
+@media (min-width: 800px) {
+  .responsive-menu {
+    display: none;
+  }
+}
